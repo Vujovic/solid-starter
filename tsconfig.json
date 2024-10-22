@@ -1,0 +1,40 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    // Type Checking
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "useDefineForClassFields": true,
+    // Modules
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    // Emit
+    "noEmit": true,
+    "isolatedModules": true,
+    // JavaScript Support
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    // Language and Environment
+    "target": "ESNext",
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": [
+      "vite/client",
+      "node"
+    ],
+    // Performance
+    "skipLibCheck": true
+  },
+  "include": [
+    "src",
+    "vite.config.ts",
+    "eslint.config.js"
+  ]
+}
