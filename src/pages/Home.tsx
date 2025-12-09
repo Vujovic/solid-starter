@@ -1,6 +1,6 @@
 import type { Component } from 'solid-js'
 
-const App: Component = () => {
+const Home: Component = () => {
   return (
     <div>
       <p>Solid starter</p>
@@ -8,4 +8,4 @@ const App: Component = () => {
   )
 }
 
-export default App
+export default Home

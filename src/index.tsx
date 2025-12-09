@@ -1,10 +1,12 @@
 /* @refresh reload */
 import { render } from 'solid-js/web'
+import { Router, Route } from '@solidjs/router'
 import 'solid-devtools'
 
-import './css/main.scss'
+import { Layout } from './Layout'
+import Home from './pages/Home'
 
-import App from './App'
+import './css/main.scss'
 
 const root = document.getElementById('root')
 
@@ -14,4 +16,11 @@ if (!root) {
   )
 }
 
-render(() => <App />, root)
+render(
+  () => (
+    <Router root={Layout}>
+      <Route path="/" component={Home} />
+    </Router>
+  ),
+  root,
+)
